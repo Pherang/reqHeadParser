@@ -19,11 +19,8 @@ http.createServer( (req,res) => {
   clientInfo.IP = ipaddress[(ipaddress.length-1)]
 
   let software = headers['user-agent'].match(/\(.*?\)/) || "no OS found"
-  console.log(typeof(software));
-  console.log(software);
   clientInfo.software = software[0].substr(1,software[0].length-2)
   clientInfo.language = language[0]
-  console.log('Client info: ' + JSON.stringify(clientInfo))
-  res.end(JSON.stringify(headers))
+  res.end(JSON.stringify(clientInfo))
 
 }).listen(PORT, () => console.log(`Listening on ${ PORT }`))
