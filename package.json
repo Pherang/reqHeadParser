@@ -1,0 +1,23 @@
+{
+  "name": "reqheadparser",
+  "version": "1.0.0",
+  "description": "Parses request header for specific info",
+  "main": "reqheadparser.js",
+  "dependencies": {
+    "forwarded": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pherang/reqHeadParser.git"
+  },
+  "author": "PR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pherang/reqHeadParser/issues"
+  },
+  "homepage": "https://github.com/pherang/reqHeadParser#readme"
+}
